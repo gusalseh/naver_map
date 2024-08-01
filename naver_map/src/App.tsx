@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  Container as MapDiv,
-  NaverMap,
-  Marker,
-  NavermapsProvider,
-} from "react-naver-maps";
+import { BrowserRouter } from "react-router-dom";
+import RoutesSetup from "./routes/RoutesSetup";
 
 const App = () => {
   const REACT_APP_NAVER_MAPS_API_KEY = process.env
@@ -15,13 +11,9 @@ const App = () => {
   }
 
   return (
-    <NavermapsProvider ncpClientId={REACT_APP_NAVER_MAPS_API_KEY}>
-      <MapDiv style={{ height: 400 }}>
-        <NaverMap>
-          <Marker defaultPosition={{ lat: 37.5666103, lng: 126.9783882 }} />
-        </NaverMap>
-      </MapDiv>
-    </NavermapsProvider>
+    <BrowserRouter>
+      <RoutesSetup />
+    </BrowserRouter>
   );
 };
 
