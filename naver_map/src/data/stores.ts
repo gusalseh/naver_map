@@ -27,6 +27,12 @@ const stores: Store[] = [
     description: "한식포차 한잔?",
     position: { lat: 37.494568, lng: 127.037292 },
   },
+  {
+    id: 4,
+    name: "조선파스타 역삼직영점",
+    description: "한국식 이탈리안 퀴진",
+    position: { lat: 37.494407, lng: 127.037457 },
+  },
 ];
 
 export default stores;
