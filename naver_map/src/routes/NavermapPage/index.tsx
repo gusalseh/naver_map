@@ -96,16 +96,7 @@ import {
   Marker,
   useMap,
 } from "react-naver-maps";
-
-interface Store {
-  id: number;
-  name: string;
-  description: string;
-  position: {
-    lat: number;
-    lng: number;
-  };
-}
+import { Store } from "../../data/stores";
 
 function InfoWindowWrapper({ store }: { store: Store | null }) {
   const navermaps = useNavermaps();
