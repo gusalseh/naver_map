@@ -80,7 +80,7 @@ function GeolocationMarker() {
       );
       setLocation(userLocation);
       map.setCenter(userLocation);
-      map.setZoom(15);
+      map.setZoom(16);
     };
 
     const onErrorGeolocation = () => {
@@ -129,7 +129,7 @@ export default function LandingPage() {
     <MapDiv style={{ height: 800, width: 800 }}>
       <NaverMap
         defaultCenter={new navermaps.LatLng(37.494772, 127.036701)}
-        defaultZoom={15}
+        defaultZoom={16}
       >
         {/* <Marker
           icon={{
