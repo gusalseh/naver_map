@@ -208,8 +208,11 @@ export default function LandingPage() {
   };
 
   return (
-    <MapDiv style={{ height: 400 }}>
-      <NaverMap defaultCenter={new navermaps.LatLng(37.494772, 127.036701)}>
+    <MapDiv style={{ height: 800, width: 800 }}>
+      <NaverMap
+        defaultCenter={new navermaps.LatLng(37.494772, 127.036701)}
+        defaultZoom={15}
+      >
         <Marker
           icon={{
             content: `<div style="width:10px;height:10px;background:#FF0000;border-radius:50%;"></div>`,
